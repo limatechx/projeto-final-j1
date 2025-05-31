@@ -21,4 +21,15 @@ public class Livro extends Item{
     public void setQtdDePaginas(int qtdDePaginas) {
         this.qtdDePaginas = qtdDePaginas;
     }
+
+    @Override
+    public String toString() {
+        String dados = String.format("""
+                Título: %s
+                Categoria: %s
+                Autor: %s
+                %d páginas
+                """, this.getNome(), this.getCategoria(), this.getAutor(), this.getQtdDePaginas());
+        return dados;
+    }
 }

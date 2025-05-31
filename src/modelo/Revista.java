@@ -21,4 +21,15 @@ public class Revista extends Item{
     public void setEdicao(int edicao) {
         this.edicao = edicao;
     }
+
+    @Override
+    public String toString() {
+        String dados = String.format("""
+                Título: %s
+                Categoria: %s
+                Editora: %s
+                Edição: %d
+                """, this.getNome(), this.getCategoria(), this.getEditora(), this.getEdicao());
+        return dados;
+    }
 }

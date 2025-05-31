@@ -21,4 +21,15 @@ public class Album extends Item {
     public void setQtdDeFaixas(int qtdDeFaixas) {
         this.qtdDeFaixas = qtdDeFaixas;
     }
+
+    @Override
+    public String toString() {
+        String dados = String.format("""
+                Título: %s
+                Categoria: %s
+                Artista: %s
+                %d faixas
+                """, this.getNome(), this.getCategoria(), this.getArtista(), this.getQtdDeFaixas());
+        return dados;
+    }
 }
