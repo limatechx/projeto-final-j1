@@ -13,9 +13,10 @@ public class Menu {
                 1 - ➕ Adicionar Itens
                 2 - 📃 Listar Itens
                 3 - 🔎 Localizar Itens
-                4 - ✏️ Atualizar Itens
-                5 - 🗑️ Remover Itens
-                6 - Sair...‍🏃🏻‍♂️‍➡️🏃🏻‍♂️‍➡️🏃🏻‍♂️‍➡️
+                4 - 🪄 Listar Itens por Categoria
+                5 - ✏️ Atualizar Itens
+                6 - 🗑️ Remover Itens
+                7 - Sair...‍🏃🏻‍♂️‍➡️🏃🏻‍♂️‍➡️🏃🏻‍♂️‍➡️
             """;
 
     public static void exibirMenu() {
@@ -30,9 +31,10 @@ public class Menu {
                 case 1 -> Servico.AdicionarItem();
                 case 2 -> Servico.listarItems();
                 case 3 -> Servico.localizarItems();
-                case 4 -> Servico.atualizarItem();
-                case 5 -> Servico.removerItem();
-                case 6 -> {
+                case 4 -> Servico.listarPorCategoria();
+                case 5 -> Servico.atualizarItem();
+                case 6 -> Servico.removerItem();
+                case 7 -> {
                     System.out.println("Biblioteca pessoal encerrada!");
                     System.out.println("Até a próxima!🙋🏻‍♂️");
                     return;

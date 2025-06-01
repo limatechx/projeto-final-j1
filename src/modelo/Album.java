@@ -9,15 +9,19 @@ public class Album extends Item {
         this.artista = artista;
         this.qtdDeFaixas = qtdDeFaixas;
     }
+
     public String getArtista() {
         return artista;
     }
+
     public void setArtista(String artista) {
         this.artista = artista;
     }
+
     public int getQtdDeFaixas() {
         return qtdDeFaixas;
     }
+
     public void setQtdDeFaixas(int qtdDeFaixas) {
         this.qtdDeFaixas = qtdDeFaixas;
     }

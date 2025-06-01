@@ -28,6 +28,17 @@ public class BancoDeDados {
         }
     }
 
+    public static List<Item> listarPorCategoria(String trecho) {
+        List<Item> encontrados = new ArrayList<>();
+        for (Item item : itens) {
+            if (item.getNome().toLowerCase().contains(trecho.toLowerCase())
+                    || item.getCategoria().toLowerCase().contains(trecho.toLowerCase())) {
+                encontrados.add(item);
+            }
+        }
+        return encontrados;
+    }
+
     public static Item localizarItem(String nome) {
         for (Item item : itens) {
             if (item.getNome().equalsIgnoreCase(nome)) {

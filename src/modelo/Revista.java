@@ -1,6 +1,6 @@
 package modelo;
 
-public class Revista extends Item{
+public class Revista extends Item {
     private String editora;
     private int edicao;
 
@@ -9,15 +9,19 @@ public class Revista extends Item{
         this.editora = editora;
         this.edicao = edicao;
     }
+
     public String getEditora() {
         return editora;
     }
+
     public void setEditora(String editora) {
         this.editora = editora;
     }
+
     public int getEdicao() {
         return edicao;
     }
+
     public void setEdicao(int edicao) {
         this.edicao = edicao;
     }
